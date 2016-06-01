@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application:x-subrip
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+Actions=FixSubTitle
+
+[Desktop Action FixSubTitle]
+Name=Fix Subtitle File
+Icon=editor
+Exec=subfixer %U
