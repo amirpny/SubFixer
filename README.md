@@ -19,7 +19,7 @@ Ali Vakilzade [Base Package]
 
 #### deb package
 
-Download the latest deb package from [download page](https://github.com/hamidrezakp/SubFixer) then install with dpkg
+Download the latest deb package from [download page](https://github.com/hamidrezakp/SubFixer/releases/tag/v1.0) then install with dpkg
 
     dpkg -i subfixer_xx.yy.deb
 
