@@ -1,17 +1,17 @@
-# SubtitleFixer
+# SubFixer
 
 ## Important
 
-This is a simple nautilus script for fixing Persian subtitles.
-If you don't want to watch videos with Persian subtitles this script won't be usefull for you..
+This is a simple script for fixing Persian subtitles.This script is available for Dolphin in Kubuntu and Nautilus in Ubuntu . If you do not want to watch videos with Persian subtitles this script will not be useful for you.The base of script was written by Ali Vakilzade
 
 ## User Guide
 
-There is a user document in persian [here](http://aliva.ir/projects/subtitlefixer)
+in Nautilus or Dolphin you can easily Right-click on subtitle files taht have 'srt' extention and then click on "Fix subtitle file" and they will be fixed.
 
 ## AUTHORS
 
-Ali Vakilzade
+Hamid reza kaveh Pishghadam [New Package]
+Ali Vakilzade [Base Package]
 
 ## Quick Guide
 
@@ -19,31 +19,29 @@ Ali Vakilzade
 
 #### deb package
 
-Download the latest deb package from [download page](https://github.com/aliva/SubtitleFixer/downloads) then install with dpkg
+Download the latest deb package from [download page](https://github.com/hamidrezakp/SubFixer) then install with dpkg
 
-    dpkg -i subtitlefixer_xx.yy.deb
-
-#### Other
-
-Copy these lines in a terminal and press enter for auto install.
-
-    su -c 'wget https://github.com/aliva/SubtitleFixer/raw/master/install.sh \
-    -O subtitlefixer-install.sh \
-    && chmod +x+u subtitlefixer-install.sh \
-    && ./subtitlefixer-install.sh'
+    dpkg -i subfixer_xx.yy.deb
 
 ### Usage
 
 #### Terminal
 
-    subtitlefixer file.srt
+    subfixer file.srt
 
 #### Nautilus
 
-Right click on srt files in nautilus and select "اصلاح زیرنویس پارسی"
+Right click on srt files in nautilus and select "Fix subTitle file"
 
 (This Options is only available for 'srt' files)
 
+#### Dolphin
+
+Right click on srt files in Dolphin and select "Fix subTitle file"
+
+(This Options is only available for 'srt' files)
+
+
 ## COPYING
 
-SubtitleFixer is distributed under the GPL Version 3.
+SubFixer is distributed under the GPL Version 2.
