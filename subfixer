@@ -88,8 +88,12 @@ class SubtitleFixer:
 		lines  = self.string.split('\n')
 		string = ''
 
+		ln = 0
 		for line in lines:
-			if re.match('^%s\s-->\s%s$' % (self.time, self.time), line):
+			# Fixing the bug on persian number at line 1.
+			if ln == 0:
+				string += line
+			elif re.match('^%s\s-->\s%s$' % (self.time, self.time), line):
 				string += line
 			elif re.match('^%s\s-->\s%s$' % (self.time, self.time), line[:-1]):
 				string += line
@@ -125,6 +129,7 @@ class SubtitleFixer:
 			string += '\n'
 
 			self.string = string
+			ln+1
 
 
 	def decode_string(self, string):
